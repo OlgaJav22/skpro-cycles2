@@ -92,7 +92,28 @@ public class Main {
             System.out.println("Сегодня пятница " + friday + " число. Необходимо подготовить отчет.");
         }
 
+        // задача 3.1
+        System.out.println();
 
+        int yearStartComet = 1822;
+        int yearCometNew = 2122;
+
+        for (int comet=0; comet <=yearCometNew; comet+=79) {
+            if (comet>yearStartComet && comet<yearCometNew && comet%79==0) {
+                System.out.println(comet);
+            }
+        }
+
+        //задача 3.2
+
+        System.out.println();
+
+        int number2 = 2;
+        int totalNumber2;
+        for (int c =1; c<=10; c++) {
+            totalNumber2=number2*c;
+            System.out.print(number2 + "*" + c + " = ");
+            System.out.println(totalNumber2);
+        }
     }
-
 }
