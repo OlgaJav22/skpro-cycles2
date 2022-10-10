@@ -5,7 +5,7 @@ public class Main {
 
         int deposit = 15000;
         int total = 0;
-        int i = 1;
+        int i = 0;
         while (total < 2_459_000) {
             i++;
             total = total + total / 100;
@@ -20,11 +20,11 @@ public class Main {
         int number = 0;
         while (number < 10) {
             number++;
-            System.out.print(" " + number + " ");
+            System.out.print(number + " ");
         }
         System.out.println("\n");
         for (int number1 = 10; number1 >0; number1--) {
-            System.out.print(" " + number1 + " ");
+            System.out.print(number1 + " ");
         }
         System.out.println("\n");
         //задача 1.3
@@ -74,8 +74,9 @@ public class Main {
 
         int depositVasilii = 15000;
         int totalVasilii = 0;
+        int month = 108;
 
-        for (int h=0; h<=108; h++) {
+        for (int h=0; h<=month; h++) {
 
             totalVasilii = totalVasilii + totalVasilii*7/100;
             totalVasilii= totalVasilii+depositVasya;
@@ -99,7 +100,7 @@ public class Main {
         int yearCometNew = 2122;
 
         for (int comet=0; comet <=yearCometNew; comet+=79) {
-            if (comet>yearStartComet && comet<yearCometNew && comet%79==0) {
+            if (comet>yearStartComet && comet%79==0) {
                 System.out.println(comet);
             }
         }
